@@ -13,29 +13,81 @@ body
 	font-family: Roboto;
 }
 
+/* The `button` element, for example, somehow doesn't inherit some values. */
+body *
+{
+	font-family: inherit;
+	font-size: inherit;
+}
+
 header
 {
-	border: 1px solid red;
 	min-height: 533px;
+	font-size: 18px;
+	border: 1px solid red;
 }
 
-header li
+header h1
 {
-	list-style-type: none;
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 1.21;
 }
 
-.container
+header p
 {
-	display: flex;
+	line-height: 1.16;
 }
 
-.container.vertical
+header button
 {
-	flex-direction: column;
+	padding: 8px 34px;
+	margin-top: 32px;
+	font-weight: 700;
+	background-color: #3882F6;
+	color: white;
+	border-radius: 9px;
 }
 
-.container.center
+.flex.center
 {
 	justify-content: center;
 	align-items: center;
+}
+
+.flex.vertical.center-x,
+.flex.horizontal.center-y
+{
+	align-items: center;
+}
+
+.flex               { display        : flex;          }
+.flex.space-between { justify-content: space-between; }
+.flex.space-evenly  { justify-content: space-evenly;  }
+.flex.vertical      { flex-direction : column;        }
+.grow                    { flex-grow      : 1;             }
+.gap-12                  { gap            : 12px;          }
+.width-1024              { width          : 1024px;        }
+.flex.vertical.left { align-items    : flex-start;    }
+
+.logo
+{
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.nav
+{
+	margin-top: 13px;
+	margin-bottom: 118px;
+}
+
+.nav ul
+{
+	gap: 24px;
+}
+
+.nav li
+{
+	list-style-type: none;
 }
