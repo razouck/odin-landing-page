@@ -15,6 +15,7 @@ html { box-sizing: border-box; }
 	*/
 	font-family: inherit;
 	font-size: inherit;
+	color: inherit;
 }
 
 body
@@ -23,6 +24,7 @@ body
 	font-family: Roboto;
 	font-size: 18px;
 }
+
 
 
 /* Helper classes ------------------------------------------------------------ */
@@ -46,11 +48,9 @@ body
 
 
 /* Header -------------------------------------------------------------------- */
-header
-{
-	min-height: 535px;
-	border-bottom: 1px solid red;
-}
+header     { height     : 535px; }
+header img { margin-top : -2px;  }
+header p   { line-height: 1.16;  }
 
 header h1
 {
@@ -59,38 +59,33 @@ header h1
 	line-height: 1.18;
 }
 
-header img { margin-top : -2px; }
-header p   { line-height: 1.16; }
-
 header button
 {
 	padding: 8px 34px;
 	margin-top: 15px;
 	font-weight: 700;
-	background-color: #3882F6;
-	color: white;
 	border-radius: 9px;
 }
 
-.logo
+header .logo
 {
 	font-size: 24px;
 	font-weight: 900;
 }
 
-.nav
+header .nav
 {
 	margin-top: 14px;
 	margin-bottom: 120px;
 }
 
-.nav ul
+header .nav ul
 {
 	gap: 25px;
 	padding-top: 2px;
 }
 
-.nav li
+header .nav li
 {
 	list-style-type: none;
 }
@@ -207,3 +202,16 @@ footer
 	font-size: 18px;
 	height: 100px;
 }
+
+
+
+
+
+
+/* Colors -------------------------------------------------------------------- */
+header,
+footer        { background-color: #1f2937; }
+header        { color           : #e5e7eb; }
+header h1,
+header .logo  { color           : #f9faf8; }
+header button { background-color: #3882F6; }
