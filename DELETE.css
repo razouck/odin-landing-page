@@ -14,7 +14,7 @@ body
 	min-height: 100vh;
 }
 
-body::after
+body::before
 {
 	display: block;
 	position: absolute;
@@ -27,5 +27,6 @@ body::after
 	background-origin: border-box;
 	background-repeat: no-repeat;
 	background-position: top center;
-	opacity: 0.4;
+	opacity: 0.2;
+	z-index: -1;
 }
