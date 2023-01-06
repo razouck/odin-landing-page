@@ -92,6 +92,7 @@ header button
 .nav ul
 {
 	gap: 25px;
+	padding-top: 2px;
 }
 
 .nav li
