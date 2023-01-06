@@ -1,37 +1,47 @@
+html
+{
+	box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after
 {
+	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
 	border: 0;
+	/*
+	The `button` element, for example,
+	somehow doesn't inherit some values.
+	*/
+	font-family: inherit;
+	font-size: inherit;
 }
 
 body
 {
 	min-height: 100vh;
 	font-family: Roboto;
-}
-
-/* The `button` element, for example, somehow doesn't inherit some values. */
-body *
-{
-	font-family: inherit;
-	font-size: inherit;
+	font-size: 18px;
 }
 
 header
 {
-	min-height: 533px;
-	font-size: 18px;
-	border: 1px solid red;
+	min-height: 535px;
+	border-bottom: 1px solid red;
+}
+
+header img
+{
+	margin-top: -1px;
 }
 
 header h1
 {
 	font-size: 48px;
 	font-weight: 900;
-	line-height: 1.21;
+	line-height: 1.2;
 }
 
 header p
@@ -58,10 +68,11 @@ header button
 .flex               { display        : flex;          }
 .flex.space-between { justify-content: space-between; }
 .flex.space-evenly  { justify-content: space-evenly;  }
+.flex.x.center-x    { justify-content: center;        }
 .flex.y             { flex-direction : column;        }
 .flex.y.left        { align-items    : flex-start;    }
 .flex.y.center-x,
-.flex.x.center-y    { align-items: center;            }
+.flex.x.center-y    { align-items    : center;        }
 .grow               { flex-grow      : 1;             }
 .gap-12             { gap            : 12px;          }
 .width-1024         { width          : 1024px;        }
@@ -74,16 +85,40 @@ header button
 
 .nav
 {
-	margin-top: 13px;
-	margin-bottom: 118px;
+	margin-top: 14px;
+	margin-bottom: 119px;
 }
 
 .nav ul
 {
-	gap: 24px;
+	gap: 25px;
 }
 
 .nav li
 {
 	list-style-type: none;
+}
+
+.gallery
+{
+	border-bottom: 1px solid red;
+	height: 500px;
+}
+
+.gallery .item
+{
+	width: 168px;
+}
+
+.image
+{
+	width: 168px;
+	height: 168px;
+	border: 4px solid;
+	border-radius: 15px;
+}
+
+.gallery > div
+{
+	width: 820px;
 }
