@@ -10,4 +10,32 @@
 body
 {
 	min-height: 100vh;
+	font-family: Roboto;
+}
+
+header
+{
+	border: 1px solid red;
+	min-height: 533px;
+}
+
+header li
+{
+	list-style-type: none;
+}
+
+.container
+{
+	display: flex;
+}
+
+.container.vertical
+{
+	flex-direction: column;
+}
+
+.container.center
+{
+	justify-content: center;
+	align-items: center;
 }
