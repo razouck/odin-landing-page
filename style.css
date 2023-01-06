@@ -162,7 +162,6 @@ header .nav li
 	height: 151px;
 	width: 1024px;
 	border-radius: 9px;
-	border: 1px solid red;
 }
 
 .action > div
@@ -182,7 +181,7 @@ header .nav li
 	border-radius: 9px;
 
 	background: none;
-	border: 2px solid red;
+	border: 2px solid;
 }
 
 
@@ -201,19 +200,19 @@ footer
 
 /* Colors -------------------------------------------------------------------- */
 header,
-footer        { background-color: #1f2937; }
-header        { color           : #e5e7eb; }
+footer          { background-color: #1f2937; }
+header,
+.action,
+footer          { color           : #e5e7eb; }
 header h1,
 header .logo,
-header button { color           : #f9faf8; }
-header button { background-color: #3882F6; }
-
-
-
+header button,
+.action h2,
+.action button  { color           : #f9faf8; }
+header button   { background-color: #3882F6; }
 .gallery,
-.quotes         { color       : #1f2937; }
-.gallery .image { border-color: #3882F6; }
-
-
-
-.quotes { background-color: #e5e7eb; }
+.quotes         { color           : #1f2937; }
+.gallery .image { border-color    : #3882F6; }
+.quotes         { background-color: #e5e7eb; }
+.action         { background-color: #3882f6; }
+.action button  { border-color    : #f9faf8; }
