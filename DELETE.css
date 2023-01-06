@@ -1,0 +1,31 @@
+
+*,
+*::before,
+*::after
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+body
+{
+	min-height: 100vh;
+}
+
+body::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	height: 1912px;
+	min-width: 100%;
+	background-image: url("./img/01.png");
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-position: top center;
+	opacity: 0.4;
+}
