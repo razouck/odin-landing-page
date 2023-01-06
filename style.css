@@ -213,5 +213,6 @@ header,
 footer        { background-color: #1f2937; }
 header        { color           : #e5e7eb; }
 header h1,
-header .logo  { color           : #f9faf8; }
+header .logo,
+header button { color           : #f9faf8; }
 header button { background-color: #3882F6; }
