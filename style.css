@@ -199,20 +199,28 @@ footer
 
 
 /* Colors -------------------------------------------------------------------- */
+:root
+{
+	--blue: #3882f6;
+	--dark: #1f2937;
+	--light: #e5e5e5;
+	--lighter: #f9faf8;
+}
+
 header,
-footer          { background-color: #1f2937; }
+footer          { background-color: var(--dark);    }
 header,
 .action,
-footer          { color           : #e5e7eb; }
+footer          { color           : var(--light);   }
 header h1,
 header .logo,
 header button,
 .action h2,
-.action button  { color           : #f9faf8; }
-header button   { background-color: #3882F6; }
+.action button  { color           : var(--lighter); }
+header button   { background-color: var(--blue);    }
 .gallery,
-.quotes         { color           : #1f2937; }
-.gallery .image { border-color    : #3882F6; }
-.quotes         { background-color: #e5e7eb; }
-.action         { background-color: #3882f6; }
-.action button  { border-color    : #f9faf8; }
+.quotes         { color           : var(--dark);    }
+.gallery .image { border-color    : var(--blue);    }
+.quotes         { background-color: var(--light);   }
+.action         { background-color: var(--blue);    }
+.action button  { border-color    : var(--lighter); }
