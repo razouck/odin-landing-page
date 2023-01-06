@@ -93,14 +93,9 @@ header .nav li
 
 
 /* Gallery ------------------------------------------------------------------- */
-.gallery
-{
-	border-bottom: 1px solid red;
-	height: 500px;
-}
-
-.gallery > div { width: 820px; }
-.gallery .item { width: 168px; }
+.gallery       { height: 500px; }
+.gallery > div { width: 820px;  }
+.gallery .item { width: 168px;  }
 
 .gallery h2
 {
@@ -216,3 +211,8 @@ header h1,
 header .logo,
 header button { color           : #f9faf8; }
 header button { background-color: #3882F6; }
+
+
+
+.gallery        { color       : #1f2937; }
+.gallery .image { border-color: #3882F6; }
