@@ -160,3 +160,41 @@ header button
 	font-weight: 600;
 	text-align: right;
 }
+
+
+
+/* Call to action ------------------------------------------------------------ */
+.quotes + .flex
+{
+	height: 351px;
+	border-bottom: 1px solid red;
+}
+
+.action
+{
+	margin-top: 1px;
+	height: 151px;
+	width: 1024px;
+	border-radius: 9px;
+	border: 1px solid red;
+}
+
+.action > div
+{
+	height: 100px;
+	width: 784px;
+}
+
+.action h2 { font-size : 24px; }
+.action p  { margin-top: -1px; }
+
+.action button
+{
+	margin-top: 6px;
+	padding: 4px 32px;
+	font-weight: 700;
+	border-radius: 9px;
+
+	background: none;
+	border: 2px solid red;
+}
