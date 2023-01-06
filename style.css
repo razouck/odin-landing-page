@@ -55,20 +55,16 @@ header button
 	align-items: center;
 }
 
-.flex.vertical.center-x,
-.flex.horizontal.center-y
-{
-	align-items: center;
-}
-
 .flex               { display        : flex;          }
 .flex.space-between { justify-content: space-between; }
 .flex.space-evenly  { justify-content: space-evenly;  }
-.flex.vertical      { flex-direction : column;        }
-.grow                    { flex-grow      : 1;             }
-.gap-12                  { gap            : 12px;          }
-.width-1024              { width          : 1024px;        }
-.flex.vertical.left { align-items    : flex-start;    }
+.flex.y             { flex-direction : column;        }
+.flex.y.left        { align-items    : flex-start;    }
+.flex.y.center-x,
+.flex.x.center-y    { align-items: center;            }
+.grow               { flex-grow      : 1;             }
+.gap-12             { gap            : 12px;          }
+.width-1024         { width          : 1024px;        }
 
 .logo
 {
