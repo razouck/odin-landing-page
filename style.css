@@ -1,5 +1,5 @@
 
-html { box-sizing: border-box; }
+html    { box-sizing: border-box;     }
 a       { text-decoration: none;      }
 a:hover { text-decoration: underline; }
 
@@ -30,12 +30,6 @@ body
 
 
 /* Helper classes ------------------------------------------------------------ */
-.flex.center
-{
-	justify-content: center;
-	align-items: center;
-}
-
 .flex               { display        : flex;          }
 .flex.space-between { justify-content: space-between; }
 .flex.space-evenly  { justify-content: space-evenly;  }
@@ -48,10 +42,15 @@ body
 .gap-30             { gap            : 30px;          }
 .width-1020         { width          : 1020px;        }
 
+.flex.center
+{
+	justify-content: center;
+	align-items: center;
+}
+
 
 
 /* Header -------------------------------------------------------------------- */
-
 header h1,
 header p,
 header button,
