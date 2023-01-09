@@ -14,31 +14,31 @@ function draw_grid(width, columns, gap)
 		#horizontal_grid${COOL_RNG},
 		#horizontal_grid${COOL_RNG} div
 		{
-			outline         : none;
-			border          : none;
+			outline          : none                 ;
+			border           : none                 ;
 		}
 		#horizontal_grid${COOL_RNG}
 		{
-			display         : flex;
-			justify-content : space-between;
-			width           : ${width}px;
-			height          : 100vh;
-			position        : fixed;
-			top             : 0;
-			left            : 50%;
-			transform       : translateX(-50%);
-			gap             : ${gap}px;
+			display          : flex                 ;
+			justify-content  : space-between        ;
+			width            : ${width}px           ;
+			height           : 100vh                ;
+			position         : fixed                ;
+			top              : 0                    ;
+			left             : 50%                  ;
+			transform        : translateX(-50%)     ;
+			gap              : ${gap}px             ;
 		}
 		#horizontal_grid${COOL_RNG} div
 		{
-			flex-grow       : 1;
-			background-color: hsl(11 99% 72% / .2);
-			transition      : background-color .1s;
+			flex-grow        : 1;
+			background-color : hsl(11 99% 72% / .2) ;
+			transition       : background-color .1s ;
 		}
 		#horizontal_grid${COOL_RNG} div:hover,
 		#horizontal_grid${COOL_RNG} div.hover
 		{
-			background-color: hsl(11 99% 72% / .4);
+			background-color : hsl(11 99% 72% / .4) ;
 		}
 		`;
 
