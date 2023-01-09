@@ -249,3 +249,6 @@ header button   { background-color: var(--blue);    }
 .quotes         { background-color: var(--light);   }
 .action         { background-color: var(--blue);    }
 .action button  { border-color    : var(--lighter); }
+
+*, ::before, ::after { outline: 1px solid red; }
+
