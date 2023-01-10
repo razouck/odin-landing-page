@@ -1,0 +1,62 @@
+
+:root
+{
+	--color1         : hsl(11 99% 72% / .2)          ;
+	--color2         : hsl(183, 100%, 50%, .2)       ;
+}
+body.grid_active::after
+{
+	display          : block                         ;
+	content          : ''                            ;
+	width            : 100%                          ;
+	min-height       : 1980px                        ;
+	position         : absolute                      ;
+	top              : 0                             ;
+	left             : 0                             ;
+	background       :
+		               linear-gradient(
+		               	to bottom,
+		               	transparent,
+		                transparent 29px,
+		               	var(--color1) 29px,
+		               	var(--color1)
+		               )                         ;
+	background-size  : 100% 30px                     ;
+}
+#info,
+#info::after
+{
+	position         : fixed                         ;
+	left             : 50%                           ;
+	transform        : translateX(-50%)              ;
+	border           : none                          ;
+	outline          : none                          ;
+	transform        : translateX(-50%)              ;
+	opacity          : 0                             ;
+	transition       : opacity 100ms                 ;
+}
+#info
+{
+	top              : 100px                         ;
+	padding-left     : 1em                           ;
+	font-family      : verdana                       ;
+	font-size        : 10px                          ;
+	color            : #0081c9                       ;
+	border-bottom    : 1px solid #0081c9             ;
+	user-select      : none                          ;
+}
+#info::after
+{
+	content          : ''                            ;
+	display          : block                         ;
+	bottom           : -6px                          ;
+	height           : 11px                          ;
+	width            : 100%                          ;
+	box-shadow       : 1px 0 #0081c9, -1px 0 #0081c9 ;	
+}
+#info.visible,
+#info.visible::after
+{
+	opacity          : 100%                          ;
+}
+
