@@ -136,7 +136,7 @@ let width   = 1320;
 let columns = 12;
 let gap     = 30;
 
-const grid  = true;
+const grid  = false;
 
 if (grid)
 {
